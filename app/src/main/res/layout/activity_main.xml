@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.epicodus.addressgeocoder.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address Geocoder"
+        android:id="@+id/titleTextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addressEditText"
+        android:layout_below="@+id/titleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:hint="Enter address" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude: "
+        android:id="@+id/textView"
+        android:layout_marginTop="60dp"
+        android:textSize="30sp"
+        android:layout_below="@+id/addressEditText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/latitudeTextView"
+        android:layout_below="@+id/textView"
+        android:textSize="30sp"
+        android:layout_alignLeft="@+id/addressEditText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitude: "
+        android:id="@+id/textView2"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:layout_below="@+id/latitudeTextView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/longitudeTextView"
+        android:layout_below="@+id/textView"
+        android:textSize="30sp"
+        android:layout_alignLeft="@+id/addressEditText" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Coordinates"
+        android:id="@+id/getCoordinatesButton"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
