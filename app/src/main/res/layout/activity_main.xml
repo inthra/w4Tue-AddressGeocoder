@@ -19,44 +19,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/addressEditText"
+        android:layout_marginTop="148dp"
+        android:hint="Enter address"
         android:layout_below="@+id/titleTextView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        android:hint="Enter address" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Latitude: "
+        android:text="Coordinates: "
         android:id="@+id/textView"
         android:layout_marginTop="60dp"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:layout_below="@+id/addressEditText"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/latitudeTextView"
+        android:id="@+id/coordinateTextView"
         android:layout_below="@+id/textView"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:layout_alignLeft="@+id/addressEditText" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Longitude: "
-        android:id="@+id/textView2"
-        android:layout_marginTop="10dp"
-        android:textSize="30sp"
-        android:layout_below="@+id/latitudeTextView"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/longitudeTextView"
-        android:layout_below="@+id/textView"
-        android:textSize="30sp"
-        android:layout_alignLeft="@+id/addressEditText" />
 
     <Button
         android:layout_width="match_parent"
