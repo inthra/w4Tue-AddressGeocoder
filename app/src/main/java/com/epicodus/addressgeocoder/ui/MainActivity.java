@@ -1,5 +1,6 @@
 package com.epicodus.addressgeocoder.ui;
 
+import android.content.Intent;
 import android.location.Address;
 import android.location.Geocoder;
 import android.support.v7.app.AppCompatActivity;
@@ -11,6 +12,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.epicodus.addressgeocoder.R;
+import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.vision.barcode.Barcode;
 
@@ -74,7 +76,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Log.v("Address: ", newAddress);
                 LatLng newCoordinates = getLocationFromAddress(newAddress);
                 Log.v("coords: ", newCoordinates.toString());
+
                 mCoordinateTextView.setText(newCoordinates.toString());
+
+
+                Bundle args = new Bundle();
+                args.putParcelable("coordinates", newCoordinates);
+                Intent intent = new Intent(MainActivity.this, MapsActivity.class);
+                intent.putExtras(args);
+                startActivity(intent);
 //                mAddressEditText.setText("");
             }
         }

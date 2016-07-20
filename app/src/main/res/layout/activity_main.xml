@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/addressEditText"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="50dp"
         android:hint="Enter address"
         android:layout_below="@+id/titleTextView"
         android:layout_alignParentLeft="true"
@@ -30,9 +30,11 @@
         android:layout_height="wrap_content"
         android:text="Coordinates: "
         android:id="@+id/textView"
-        android:layout_marginTop="60dp"
         android:textSize="20sp"
-        android:layout_below="@+id/addressEditText"/>
+        android:layout_below="@+id/addressEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
 
     <TextView
         android:layout_width="wrap_content"
